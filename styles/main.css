@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Inclusive+Sans:ital@0;1&display=swap');
+
 @font-face {
   font-family: 'Inter var';
   font-style: normal;
@@ -15,7 +17,7 @@
 }
 
 body {
-  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: 'Inclusive Sans','Inter var', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: subpixel-antialiased;
@@ -35,9 +37,13 @@ h6 {
 }
 h1 {
   font-variation-settings: 'wght' 850;
+  font-family: 'Gloock';
+  letter-spacing: 0.06rem;
 }
 h2 {
   font-variation-settings: 'wght' 750;
+  font-family: 'Gloock';
+  letter-spacing: 0.06rem;
 }
 
 @media screen and (min-device-pixel-ratio: 1.5),
@@ -62,4 +68,10 @@ img.next-image {
 
 .nav-line .nav-link {
   color: #69778c;
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    font-size: 18px;
+  }
 }
