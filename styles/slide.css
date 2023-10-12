@@ -1,0 +1,42 @@
+/*===============================================
+                     Animations
+===============================================*/
+
+.prose a {
+    position: relative;
+    text-decoration: none;
+}
+ 
+.prose a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: white;
+    visibility: visible;
+    transform: scaleX(1);
+    transform-origin: 100% 0%;
+    transition: all 0.2s ease-out 0s;
+}
+
+.prose a::after {
+    content: "";
+    transition-delay: 0.4s;
+    transition: all 0.2s ease-out 0s;
+}
+ 
+.prose a:hover::before {
+    visibility: hidden;
+    transform: scaleX(0);
+}
+
+.prose a:hover::after {
+    content: " →";
+}
+ 
+.prose a:active::before {
+    visibility: visible;
+    transform: scaleX(1);   
+}
